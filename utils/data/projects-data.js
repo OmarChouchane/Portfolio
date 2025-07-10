@@ -1,42 +1,76 @@
 export const projectsData = [
-    {
-        id: 1,
-        name: 'AI Powered Financial App',
-        description: "Me and my team built an AI-powered financial mobile application. I have developed API using Express, Typescript, OpenAI, AWS, and MongoDB. Used OTP via AWS SES, Google, and Facebook for the authentication system. Built AI assistants using OpenAI's latest model and trained using our dataset. Voice messages are converted to text using AWS Transcribe. The app fetches data from Google Sheets and generates a PDF term sheet, sent via AWS SES.",
-        tools: ['Express', 'MongoDB', 'OpenAI API', 'AWS SES', 'AWS S3', 'Node Mailer', 'Joi', 'Puppeteer', 'EC2', 'PM2', 'Nginx'],
-        role: 'Backend Developer',
-        code: '',
-        demo: '',
-    },
-    {
-        id: 2,
-        name: 'Travel Agency App',
-        description: 'I have designed and developed a full-stack web app for 2Expedition, a travel agency in Armenia. I created the UI using NextJS, Typescript, MUI, TailwindCSS, Google Maps, Sun-Editor, and React Slick. The app supports multiple languages and currencies. I developed the API using NestJS, Typescript, MySQL, TypeORM, AWS, and Nodemailer. I deployed the front-end app to AWS Amplify and the back-end app to AWS EC2.',
-        tools: ['NextJS', 'Tailwind CSS', "Google Maps", "NestJS", "TypeScript", "MySQL", "AWS S3", "Sun-Editor", "Gmail Passkey"],
-        role: 'Full Stack Developer',
-        code: '',
-        demo: '',
-    },
-    {
-        id: 3,
-        name: 'AI Powered Real Estate',
-        description: 'My team built an AI-based real estate app using Replicate API and OpenAI. We used Express, Typescript, OpenAI, Replicate, Stripe, and Mongoose to develop the API. We utilized NextJS, Formik, TailwindCSS, and other npm libraries for the UI. We have trained multiple AI assistants using the latest GPT model and integrated Replicate API for image processing. We added role-based auth, subscription plans, Cron job scheduling, and payment integration with Stripe.',
-        tools: ['React', 'Bootstrap', 'SCSS', 'Stripe', 'Express', 'TypeScript', 'MongoDB', 'Azure Blob', 'OpenAI API', 'Replicate AI', 'Cronjob', 'JWT'],
-        code: '',
-        role: 'Full Stack Developer',
-        demo: '',
-    },
-    {
-        id: 4,
-        name: 'Newsroom Management',
-        description: "My team and I developed a newspaper management dashboard application called Newsroom Management. As a front-end developer, I worked on creating the dashboard using NextJS, Material UI, Redux, Calendar, and other necessary npm libraries. We used React Redux to manage the application's state and React-hook-form and Sun Editor to handle forms.",
-        tools: ['NextJS', 'Material UI', 'Redux', 'Sun Editor', "Calendar"],
-        code: '',
-        demo: '',
-        role: 'Full Stack Developer',
-    }
+  {
+    id: 1,
+    name: "PrepAI – AI-Powered Interview Preparation Platform",
+    description:
+      "PrepAI is an intelligent, full-stack web platform designed to help users prepare for interviews with realistic, AI-driven mock sessions. Built with a modern web stack, it delivers personalized interview simulations across multiple domains including software engineering, product management, and business analytics. This project was part of my personal summer work at INSAT and focused on combining LLM capabilities with scalable full-stack development. Features include real-time interview simulation with dynamic prompts, AI-based feedback & grading for each answer, multiple interview domains, and interactive UI using Shadcn, Tailwind, and Next.js.",
+    tools: [
+      "Next.js",
+      "TypeScript",
+      "React.js",
+      "Tailwind CSS",
+      "OpenAI API",
+      "MongoDB",
+      "Mongoose ODM",
+      "REST APIs",
+      "Shadcn UI",
+      "Prompt Engineering",
+    ],
+    role: "Full Stack Developer",
+    code: "https://github.com/OmarChouchane/PrepAI",
+    demo: "",
+  },
+  {
+    id: 2,
+    name: "Eventy - Full-stack Event Management Web App",
+    description:
+      "Eventy is a modern, full-stack web application designed to streamline how users create, manage, and register for events. Developed during my first year of Computer Networks & Telecommunications Engineering at INSAT, with the goal of building a scalable, secure, and user-centric platform from scratch. Features include event creation & editing with images, user registration with email confirmation via SendGrid, participant tracking & organizer dashboard, resource management for rooms and equipment, secure authentication using Clerk, and modern responsive UI with Shadcn + Tailwind.",
+    tools: [
+      "Next.js",
+      "TypeScript",
+      "React.js",
+      "Tailwind CSS",
+      "MongoDB",
+      "Mongoose ODM",
+      "SendGrid",
+      "Clerk Auth",
+      "Shadcn UI",
+      "REST APIs",
+    ],
+    role: "Full Stack Developer",
+    code: "https://github.com/OmarChouchane/Eventy",
+    demo: "",
+  },
+  {
+    id: 3,
+    name: "SafeCatch: Smart Fishing Monitoring System",
+    description:
+      "SafeCatch is a smart monitoring system designed to combat illegal fishing practices in Tunisia. The system uses a combination of distance sensors and IoT technologies to monitor and track fishing activities, specifically targeting kiss trawling, a destructive fishing technique. It provides real-time data about seabed distance and fishing gear position, enabling fishermen to operate sustainably. This IoT project combines hardware sensors with web technologies to create a comprehensive monitoring solution.",
+    tools: [
+      "ESP32",
+      "IoT",
+      "WebSocket",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Distance Sensors",
+      "Real-time Data",
+    ],
+    code: "",
+    role: "IoT Developer & Project Manager",
+    demo: "",
+  },
+  {
+    id: 4,
+    name: "DMA9 - Online Fast Food Ordering Platform",
+    description:
+      "DMA9 is an online fast food ordering website built using PHP, Bootstrap, and Vanilla JavaScript. The platform allows users to create accounts, browse and filter food items, place orders, and receive order receipts. Features include user authentication (register, login, account management), food ordering with menu browsing and filtering, receipt generation, and an admin dashboard for managing products, viewing orders, and user management. Built with a focus on clean UI and efficient order processing.",
+    tools: ["PHP", "MySQL", "Bootstrap", "JavaScript", "HTML", "CSS", "jQuery"],
+    code: "",
+    demo: "",
+    role: "Full Stack Developer",
+  },
 ];
-
 
 // Do not remove any property.
 // Leave it blank instead as shown below
