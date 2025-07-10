@@ -10,7 +10,8 @@
 
 ![](./public/image/screen.png)
 
-## View live preview [here](https://portfolio-omarchouchanes-projects.vercel.app/) <!-- Add your deployment URL here -->
+## View live preview <img width="1860" height="765" alt="Screenshot 2025-07-10 164602" src="https://github.com/user-attachments/assets/83feaae2-311e-4556-869b-2000e1cbcb3c" />
+ <!-- Add your deployment URL here -->
 
 ---
 
