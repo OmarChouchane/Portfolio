@@ -10,7 +10,7 @@
 
 ![](./public/image/screen.png)
 
-## View live preview [here](#) <!-- Add your deployment URL here -->
+## View live preview [here](https://portfolio-omarchouchanes-projects.vercel.app/) <!-- Add your deployment URL here -->
 
 ---
 
