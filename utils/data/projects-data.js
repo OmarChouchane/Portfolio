@@ -17,7 +17,7 @@ export const projectsData = [
       "Prompt Engineering",
     ],
     role: "Full Stack Developer",
-    code: "https://github.com/OmarChouchane/PrepAI",
+    link: "https://github.com/OmarChouchane/PrepAI",
     demo: "",
   },
   {
@@ -38,7 +38,7 @@ export const projectsData = [
       "REST APIs",
     ],
     role: "Full Stack Developer",
-    code: "https://github.com/OmarChouchane/Eventy",
+    link: "https://github.com/OmarChouchane/Eventy",
     demo: "",
   },
   {
@@ -56,7 +56,7 @@ export const projectsData = [
       "Distance Sensors",
       "Real-time Data",
     ],
-    code: "",
+    link: "https://github.com/OmarChouchane/trawl-view-seabed-dream",
     role: "IoT Developer & Project Manager",
     demo: "",
   },
@@ -66,7 +66,7 @@ export const projectsData = [
     description:
       "DMA9 is an online fast food ordering platform built with PHP and MySQL. Features include user authentication, menu browsing with filtering, order placement, receipt generation, and an admin dashboard for product and order management. Built with Bootstrap for responsive design and clean UI.",
     tools: ["PHP", "MySQL", "Bootstrap", "JavaScript", "HTML", "CSS", "jQuery"],
-    code: "",
+    link: "http://github.com/OmarChouchane/DMA9",
     demo: "",
     role: "Full Stack Developer",
   },
@@ -81,6 +81,6 @@ export const projectsData = [
 //     description: "",
 //     tools: [],
 //     role: '',
-//     code: '',
+//     link: '',
 //     demo: '',
 // },
