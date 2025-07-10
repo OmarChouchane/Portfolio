@@ -8,7 +8,8 @@
 
 # Demo :movie_camera:
 
-![](./public/image/screen.png)
+ <img width="1860" height="765" alt="Screenshot 2025-07-10 164602" src="https://github.com/user-attachments/assets/45c39855-dfde-4d3b-b353-e5fc2ee55c36" />
+
 
 ## View live preview <img width="1860" height="765" alt="Screenshot 2025-07-10 164602" src="https://github.com/user-attachments/assets/83feaae2-311e-4556-869b-2000e1cbcb3c" />
  <!-- Add your deployment URL here -->
