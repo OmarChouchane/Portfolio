@@ -1,16 +1,8 @@
-<p align="center" width="100%">
-    <img height="100" src="https://github.com/said7388/developer-portfolio/assets/77630868/c0064908-cd5f-4751-a77c-eba90a62b55c">
-</p>
-
 ---
 
-# [Built Portfolio With GitHub ](https://github.com/said7388/github-portfolio)
+# Omar Chouchane - Developer Portfolio
 
----
-
-# Developer Portfolio
-
-#### Are you struggling to create a professional portfolio website? Look no further! You can use the Developer Portfolio template and create your very own personalized portfolio today! My website is designed to be user-friendly and easily customizable, making it perfect for both developers and freelancers.
+#### A modern, responsive portfolio website showcasing my skills as a Software Developer. Built with Next.js 15, React 19, and Tailwind CSS, featuring a clean design and smooth animations.
 
 ---
 
@@ -18,7 +10,7 @@
 
 ![](./public/image/screen.png)
 
-## View live preview [here](https://abusaid.netlify.app/).
+## View live preview [here](#) <!-- Add your deployment URL here -->
 
 ---
 
@@ -44,10 +36,40 @@
 - ABOUT ME
 - EXPERIENCE
 - SKILLS
-- PROJECTS
+- PROJECTS (PrepAI, Eventy, SafeCatch, DMA9)
 - EDUCATION
-- BLOG
-- CONTACTS
+- LINKEDIN POSTS (Replaced traditional blog)
+- CONTACT (FormSpree integration)
+
+---
+
+# Tech Stack :computer:
+
+## Frontend
+
+- **Next.js 15.1.1** - React framework with App Router
+- **React 19.0.0** - UI library with latest features
+- **Tailwind CSS** - Utility-first CSS framework
+- **SASS/SCSS** - Enhanced styling capabilities
+
+## Animations & UI
+
+- **Lottie React** - Smooth animations
+- **React Icons** - Comprehensive icon library
+- **React Fast Marquee** - Scrolling text effects
+- **React Toastify** - User notifications
+
+## Communication & Forms
+
+- **FormSpree** - Contact form handling
+- **Axios** - HTTP client for API requests
+- **Nodemailer** - Email functionality (optional)
+
+## Development Tools
+
+- **ESLint** - Code linting
+- **Sharp** - Image optimization
+- **PostCSS & Autoprefixer** - CSS processing
 
 ---
 
@@ -71,12 +93,10 @@ git --version
 
 ### Fork and Clone the repo
 
-To Fork the repo click on the fork button at the top right of the page. Once the repo is forked open your terminal and perform the following commands
-
 ```bash
-git clone https://github.com/<YOUR GITHUB USERNAME>/developer-portfolio.git
+git clone https://github.com/OmarChouchane/Portfolio.git
 
-cd developer-portfolio
+cd Portfolio
 ```
 
 ### Install packages from the root directory
@@ -102,12 +122,13 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ### Running with Docker Compose
 
 1. **Build Docker Image and Run Container**:
-    ```bash
-    docker-compose up --build
-    ```
+
+   ```bash
+   docker-compose up --build
+   ```
 
 2. **Access the Application**:
-    Visit [http://localhost:3000](http://localhost:3000) in your web browser to view the running application.
+   Visit [http://localhost:3000](http://localhost:3000) in your web browser to view the running application.
 
 ---
 
@@ -115,161 +136,175 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 1. **Build the Docker Image using Dockerfile.dev**:
 
-    ```bash
-    docker build -t nextjs-app -f Dockerfile.dev .
-    ```
+   ```bash
+   docker build -t nextjs-app -f Dockerfile.dev .
+   ```
 
 2. **Running the Docker Container**:
 
-    ```bash
-    docker run -p 3000:3000 nextjs-app
-    ```
+   ```bash
+   docker run -p 3000:3000 nextjs-app
+   ```
 
 3. **Access the Application**:
-    Visit [http://localhost:3000](http://localhost:3000) in your web browser to view the running application.
+   Visit [http://localhost:3000](http://localhost:3000) in your web browser to view the running application.
 
 ---
 
 # Usage :joystick:
 
-Please create a new `.env` file from `.env.example` file.
+## Environment Variables
 
-Eg:
+Create a `.env.local` file in the root directory:
 
 ```env
-NEXT_PUBLIC_GTM =
-NEXT_PUBLIC_APP_URL =
-TELEGRAM_BOT_TOKEN =
-TELEGRAM_CHAT_ID =
-GMAIL_PASSKEY =
-EMAIL_ADDRESS =
+# FormSpree (for contact form)
+NEXT_PUBLIC_FORMSPREE_ID=your_formspree_id_here
+
+# Optional: Analytics
+NEXT_PUBLIC_GTM=your_google_tag_manager_id
+
+# Optional: Email functionality (if using Nodemailer)
+EMAIL_ADDRESS=your_email@gmail.com
+GMAIL_PASSKEY=your_gmail_app_password
+
+# Optional: Telegram notifications
+TELEGRAM_BOT_TOKEN=your_bot_token
+TELEGRAM_CHAT_ID=your_chat_id
 ```
 
-### Then, Customize data in the `utils/data` [folder](https://github.com/said7388/developer-portfolio/tree/main/utils/data).
+## Customization
 
-Eg:
+### Personal Information
+
+Edit `utils/data/personal-data.js`:
 
 ```javascript
 export const personalData = {
-  name: "ABU SAID",
+  name: "Omar Chouchane",
   profile: "/profile.png",
-  designation: "Full-Stack Software Developer",
-  description: "My name is ABU SAID....",
-  email: "abusaid7388@gmail.com",
-  phone: "+8801608797655",
-  address: "Dhaka, Bangladesh",
-  github: "https://github.com/said7388",
-  facebook: "https://www.facebook.com/abusaid.riyaz/",
-  linkedIn: "https://www.linkedin.com/in/abu-said-bd/",
-  twitter: "https://twitter.com/said7388",
-  stackOverflow: "https://stackoverflow.com/users/16840768/abu-said",
-  leetcode: "https://leetcode.com/said3812/",
-  devUsername: "said7388",
-  resume: "...",
+  designation: "Software Developer",
+  description: "I'm Omar Chouchane, a passionate Software Developer...",
+  email: "omar.chouchane@insat.ucar.tn",
+  phone: "+21652834833",
+  address: "Monastir, Tunisia - 5000",
+  github: "https://github.com/OmarChouchane",
+  facebook: "https://www.facebook.com/ch.omar.1428921",
+  linkedIn: "https://www.linkedin.com/in/omar-chouchane/",
+  resume: "/Omar_Chouchane_Resume.pdf",
 };
 ```
 
-`devUsername` is used for fetching blog posts from `dev.to`.
+### Projects
+
+Update your projects in `utils/data/projects-data.js`
+
+### LinkedIn Posts
+
+Modify LinkedIn posts in `utils/data/linkedin-posts.js`
+
+### Skills & Experience
+
+Update `utils/data/skills.js` and `utils/data/experience.js`
 
 ---
 
 # Deployment :rocket:
 
-Deploying the app to platforms like Vercel or Netlify is quick and easy.
+## Prerequisites Before Deployment
 
-## Deploying to Vercel:
+1. **✅ Update FormSpree ID** in `contact-form.jsx`
+2. **✅ Add your resume PDF** to `/public/` directory
+3. **✅ Update all personal information** in data files
+4. **✅ Test contact form** functionality
+5. **✅ Verify all images** are in place
+
+## Deploying to Vercel (Recommended):
 
 1. **Sign up or log in** to [Vercel](https://vercel.com/).
-2. Once logged in, click on **"New Project"**.
-3. Select your **GitHub repo** (the one that contains your forked project) and click **Import**.
-4. Configure your environment variables in the Vercel dashboard by adding each key from your `.env` file.
-   - E.g., `NEXT_PUBLIC_GTM`, `NEXT_PUBLIC_APP_URL`, `TELEGRAM_BOT_TOKEN`, etc.
-5. Click on **Deploy**. Vercel will automatically detect your Next.js app and build it.
-6. Once the deployment is complete, you can visit your live website!
-
-### Updating After Deployment
-
-Whenever you push changes to your GitHub repo, Vercel will automatically redeploy the app, keeping your portfolio up-to-date.
+2. Click on **"New Project"**.
+3. Import your **GitHub repository**.
+4. Configure environment variables:
+   - `NEXT_PUBLIC_FORMSPREE_ID` (required for contact form)
+   - Add any other optional environment variables
+5. Click **Deploy**. Vercel will auto-detect Next.js and build your app.
+6. Your portfolio will be live at `https://your-project-name.vercel.app`
 
 ## Deploying to Netlify:
 
 1. **Sign up or log in** to [Netlify](https://www.netlify.com/).
-2. In the **Netlify Dashboard**, click **"New site from Git"**.
+2. Click **"New site from Git"**.
 3. Connect your **GitHub** account and select your repo.
-4. Configure your environment variables by going to **Site Settings > Build & Deploy > Environment** and adding keys from your `.env` file.
-5. Click **Deploy Site**. Netlify will build and deploy your portfolio.
+4. Build settings:
+   - Build command: `npm run build`
+   - Publish directory: `.next`
+5. Add environment variables in **Site Settings > Environment**.
+6. Click **Deploy Site**.
 
 ---
 
 # Tutorials :wrench:
 
-## Gmail App Password Setup
+## FormSpree Setup (Contact Form)
 
-1. **Log in to your Google Account** at [https://myaccount.google.com/](https://myaccount.google.com/).
-2. Navigate to **Security** from the left sidebar.
-3. Scroll down to the **"Signing in to Google"** section and make sure **2-Step Verification** is turned ON.
-4. Once 2-Step Verification is enabled, you'll see an option for **App Passwords**.
-5. Click on **App Passwords**. You may need to enter your Google account password again.
-6. In the **Select app** dropdown, choose "Mail", and for **Select device**, choose "Other (Custom name)" and name it appropriately (e.g., "Portfolio").
-7. Click **Generate**. A 16-character app password will be displayed. Save this password for later use in your environment variables (e.g., `GMAIL_PASSKEY`).
+1. **Sign up** at [FormSpree.io](https://formspree.io/)
+2. **Create a new form** in your dashboard
+3. **Copy the form ID** (e.g., `xvgrekgy`)
+4. **Update** the form ID in `contact-form.jsx`:
+   ```javascript
+   const res = await axios.post(
+     "https://formspree.io/f/YOUR_FORM_ID_HERE",
+     userInput
+   );
+   ```
+5. **Test the form** - FormSpree will send emails to your registered email
 
-## Create a Telegram Bot
+## Resume PDF Setup
 
-1. **Open Telegram** and search for the user **@BotFather**.
-2. Start a chat with BotFather and use the `/newbot` command to create a new bot.
-3. Choose a name for your bot.
-4. Set a unique username for your bot (must end with `bot`, e.g., `PortfolioAssistantBot`).
-5. Once your bot is created, BotFather will send you a **Token**. Save this token, as you will need it for your environment variables (e.g., `TELEGRAM_BOT_TOKEN`).
-6. To get your chat ID:
-   - Open your bot in Telegram and send it a message.
-   - Visit the following URL in your browser, replacing `BOT_TOKEN` with your actual bot token:  
-     `https://api.telegram.org/bot<BOT_TOKEN>/getUpdates`
-   - Look for the `chat` object in the response, which contains your **chat ID** (you can use this value for `TELEGRAM_CHAT_ID`).
+1. **Add your resume** as `Omar_Chouchane_Resume.pdf` in `/public/` directory
+2. **Verify the download** works properly
+3. **Update filename** in `personal-data.js` if needed:
+   ```javascript
+   resume: "/your-resume-filename.pdf";
+   ```
 
-## Fetching Blog from dev.to
+## LinkedIn Posts Integration
 
-To display your blog posts from dev.to on the portfolio:
+The portfolio displays static LinkedIn posts instead of fetching from dev.to:
 
-1. Set your `devUsername` in the `utils/data.js` file to your dev.to username.
-2. The application will automatically fetch your latest blog posts and display them in the **BLOG** section.
-3. Ensure your blogs are publicly visible on dev.to, and the application will fetch them using the dev.to API.
-
----
-
-# Packages Used :package:
-
-|   Used Package List    |
-| :--------------------: |
-|    @emailjs/browser    |
-|  @next/third-parties   |
-|         axios          |
-|      lottie-react      |
-|          next          |
-|       nodemailer       |
-|         react          |
-|       react-dom        |
-|   react-fast-marquee   |
-| react-google-recaptcha |
-|      react-icons       |
-|     react-toastify     |
-|         sharp          |
-|          sass          |
-|      tailwindcss       |
+1. **Edit** `utils/data/linkedin-posts.js`
+2. **Add your posts** with cover images
+3. **Place images** in `/public/image/` directory
+4. **Update post data** with your actual LinkedIn content
 
 ---
 
-# FAQ:
+# Key Features :star:
 
-1. For those facing the issue of "`next` is not recognized as an internal or external command, operable program or batch file."
+- **Modern Tech Stack**: Next.js 15 + React 19 + Tailwind CSS
+- **Responsive Design**: Mobile-first approach with smooth animations
+- **LinkedIn Integration**: Custom LinkedIn posts section
+- **Direct Resume Download**: PDF download functionality
+- **Contact Form**: FormSpree integration for easy contact handling
+- **Project Showcase**: Featuring PrepAI, Eventy, SafeCatch, and DMA9
+- **Performance Optimized**: Image optimization and lazy loading
+- **SEO Ready**: Meta tags and structured data
 
-Run the following command:
+---
 
-```bash
+# Contact :mailbox:
 
-npm install -g next
+**Omar Chouchane**  
+📧 omar.chouchane@insat.ucar.tn  
+📱 +21652834833  
+📍 Monastir, Tunisia  
+🔗 [LinkedIn](https://www.linkedin.com/in/omar-chouchane/)  
+🔗 [GitHub](https://github.com/OmarChouchane)
 
-```
+---
 
-This installs Next.js globally
+# License :page_facing_up:
 
-then do the usual `npm run dev`
+This project is open source and available under the [MIT License](LICENSE).
+
+---
